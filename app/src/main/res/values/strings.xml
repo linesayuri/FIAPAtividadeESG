@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Steps for Future</string>
+    <string name="button_login">Entrar</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Senha</string>
+    <string name="Caminhada">Caminhada</string>
+    <string name="campanhas">Campanhas</string>
+    <string name="troquesuasmoedas">Troque suas Moedas</string>
+    <string name="conquistas">Conquistas</string>
+    <string name="valorkmpercorridos">78</string>
+    <string name="km">km</string>
+    <string name="percorridos">Percorridos</string>
+    <string name="valormoedas">8526</string>
+    <string name="moedas">Moedas</string>
+    <string name="ranking">Ranking</string>
+    <string name="primeirolugar">1.</string>
+    <string name="segundolugar">2.</string>
+    <string name="terceirolugar">3.</string>
+    <string name="nomeprimeirocolocado">Marcos André Silveira</string>
+    <string name="nomesegundocolocado">Fabiana Oliveira</string>
+    <string name="nometerceirocolocado">Milene Santos de Paula</string>
 </resources>
