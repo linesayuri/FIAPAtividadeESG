@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nomeapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps for Future"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nomeprimeirocolocado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marcos André Silveira"
+        app:layout_constraintStart_toStartOf="@+id/nomesegundocolocado"
+        tools:layout_editor_absoluteY="458dp" />
+
+    <TextView
+        android:id="@+id/nomesegundocolocado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fabiana Oliveira"
+        app:layout_constraintStart_toStartOf="@+id/nometerceirocolocado"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/nometerceirocolocado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milene Santos de Paula"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <TextView
+        android:id="@+id/ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <TextView
+        android:id="@+id/valormoedas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8526"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="km"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <TextView
+        android:id="@+id/percorridos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="percorridos"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <TextView
+        android:id="@+id/moedas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="moedas"
+        app:layout_constraintEnd_toEndOf="@+id/valormoedas"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/valormoedas"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/valorkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="78"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="330dp"
+        android:layout_height="153dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/banner1"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2."
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        tools:layout_editor_absoluteY="458dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3."
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/buttonconsquistas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/textconquistas"
+        app:layout_constraintStart_toStartOf="@+id/textconquistas"
+        app:srcCompat="@drawable/conquistas"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <TextView
+        android:id="@+id/textconquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conquistas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <TextView
+        android:id="@+id/texttroquesuasmoedas"
+        android:layout_width="101dp"
+        android:layout_height="38dp"
+        android:text="Troque suas Moedas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toTopOf="@+id/textconquistas"
+        tools:layout_editor_absoluteX="205dp" />
+
+    <ImageView
+        android:id="@+id/buttontroquesuasmoedas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/texttroquesuasmoedas"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/texttroquesuasmoedas"
+        app:srcCompat="@drawable/troqueseuspontos"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <TextView
+        android:id="@+id/textcampanha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campanha"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <ImageView
+        android:id="@+id/buttoncampanha"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/campanhas"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <TextView
+        android:id="@+id/textcaminhada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caminhada"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toTopOf="@+id/textcampanha"
+        tools:layout_editor_absoluteX="22dp" />
+
+    <ImageView
+        android:id="@+id/buttoncaminhada"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/textcaminhada"
+        app:layout_constraintStart_toStartOf="@+id/textcaminhada"
+        app:srcCompat="@drawable/caminhada"
+        tools:layout_editor_absoluteY="591dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
