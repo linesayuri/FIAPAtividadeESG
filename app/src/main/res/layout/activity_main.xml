@@ -6,6 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:background="@color/darkblue"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="181dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="km"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:id="@+id/valorkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="78"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <TextView
+        android:id="@+id/percorridos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="percorridos"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <TextView
+        android:id="@+id/percorridos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="percorridos"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout3"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout3"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="181dp">
+
+    </FrameLayout>
+
     <TextView
         android:id="@+id/nomeapp"
         android:layout_width="wrap_content"
@@ -68,48 +130,22 @@
         android:layout_height="wrap_content"
         android:text="8526"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="242dp"
-        tools:layout_editor_absoluteY="178dp" />
-
-    <TextView
-        android:id="@+id/km"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="km"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <TextView
-        android:id="@+id/percorridos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="percorridos"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="220dp" />
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="188dp" />
 
     <TextView
         android:id="@+id/moedas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="moedas"
-        app:layout_constraintEnd_toEndOf="@+id/valormoedas"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout4"
         app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="@+id/valormoedas"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout4"
         tools:layout_editor_absoluteY="223dp" />
-
-    <TextView
-        android:id="@+id/valorkm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="78"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="175dp" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -254,5 +290,12 @@
         app:layout_constraintStart_toStartOf="@+id/textcaminhada"
         app:srcCompat="@drawable/caminhada"
         tools:layout_editor_absoluteY="591dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="km,valorkm" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
