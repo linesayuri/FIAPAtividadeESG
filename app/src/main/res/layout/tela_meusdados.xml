@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="86dp">
+
+    <TextView
+        android:id="@+id/nomeprimeirocolocado5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/btn_encerrarconta"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeprimeirocolocado" />
+
+    <TextView
+        android:id="@+id/nomeprimeirocolocado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_nome"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ranking2"
+        app:layout_constraintTop_toBottomOf="@+id/ranking2" />
+
+
+    <TextView
+        android:id="@+id/ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/meusdadoscpf"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ranking2"
+        app:layout_constraintTop_toBottomOf="@+id/nomeprimeirocolocado3" />
+
+    <TextView
+        android:id="@+id/nomeprimeirocolocado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_celular"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ranking"
+        app:layout_constraintTop_toBottomOf="@+id/ranking" />
+
+    <TextView
+        android:id="@+id/celular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/meusdadoscelular"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ranking"
+        app:layout_constraintTop_toBottomOf="@+id/nomeprimeirocolocado2" />
+
+    <TextView
+        android:id="@+id/user_celular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_cpf"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/celular"
+        app:layout_constraintTop_toBottomOf="@+id/celular" />
+
+    <TextView
+        android:id="@+id/nomeprimeirocolocado4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ranking3"
+        app:layout_constraintTop_toBottomOf="@+id/ranking3" />
+
+    <TextView
+        android:id="@+id/ranking3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/meusdadosemail"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/celular"
+        app:layout_constraintTop_toBottomOf="@+id/user_celular" />
+
+    <TextView
+        android:id="@+id/nomeprimeirocolocado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_endereco"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ranking4"
+        app:layout_constraintTop_toBottomOf="@+id/ranking4" />
+
+    <TextView
+        android:id="@+id/ranking4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/meusdadosendereco"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ranking3"
+        app:layout_constraintTop_toBottomOf="@+id/nomeprimeirocolocado4" />
+
+    <TextView
+        android:id="@+id/ranking2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:text="@string/meusdadosnome"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/percorridos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_editar"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/nomeapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="152dp"
+        android:text="@string/meusdadostitle"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/nomeapp"
+        app:layout_constraintStart_toStartOf="@+id/nomeapp"
+        app:layout_constraintTop_toBottomOf="@+id/nomeapp"
+        app:srcCompat="@drawable/avatar" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/gray"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <ImageView
+        android:id="@+id/buttonconsquistas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/conquistas"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <TextView
+        android:id="@+id/textconquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conquistas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <TextView
+        android:id="@+id/texttroquesuasmoedas"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:text="@string/troquesuasmoedas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <ImageView
+        android:id="@+id/buttontroquesuasmoedas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/troqueseuspontos"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <TextView
+        android:id="@+id/textcampanha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/campanhas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <ImageView
+        android:id="@+id/buttoncampanha"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/campanhas"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <TextView
+        android:id="@+id/textcaminhada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Caminhada"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <ImageView
+        android:id="@+id/buttoncaminhada"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/caminhada"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <Button
+        android:id="@+id/btnlogohome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/logo_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

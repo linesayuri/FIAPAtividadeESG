@@ -56,18 +56,8 @@
         android:textColor="@color/purple"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="56dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/nomeprimeirocolocado"
@@ -146,6 +136,19 @@
         app:layout_constraintTop_toBottomOf="@+id/nomeapp"
         app:srcCompat="@drawable/logo" />
 
+    <Button
+        android:id="@+id/btnminhaconta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/avatar_small"
+        android:drawablePadding="4dp"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="330dp"
@@ -158,7 +161,7 @@
         app:srcCompat="@drawable/banner1" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/btn_home"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
@@ -272,9 +275,10 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/textcampanha"
+        app:layout_constraintStart_toStartOf="@+id/textcampanha"
         app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
-        app:srcCompat="@drawable/campanhas"
-        tools:layout_editor_absoluteX="138dp" />
+        app:srcCompat="@drawable/campanhas" />
 
     <TextView
         android:id="@+id/textcaminhada"
@@ -303,6 +307,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="km,valorkm" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

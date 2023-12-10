@@ -19,4 +19,27 @@
     <string name="nomeprimeirocolocado">Marcos André Silveira</string>
     <string name="nomesegundocolocado">Fabiana Oliveira</string>
     <string name="nometerceirocolocado">Milene Santos de Paula</string>
+    <string name="username"></string>
+    <string name="minhacontatitle">Minha Conta</string>
+    <string name="minhacontatext1">Text1</string>
+    <string name="minhacontatext2">Text2</string>
+    <string name="minhacontatext3">Text3</string>
+    <string name="minhacontatext4">Text4</string>
+    <string name="minhacontatext5">Text5</string>
+    <string name="minhacontatext6">Text6</string>
+    <string name="meusdadostitle">Meus Dados</string>
+    <string name="meusdadosnome">Nome</string>
+    <string name="meusdadoscpf">CPF</string>
+    <string name="meusdadoscelular">Celular</string>
+    <string name="meusdadosendereco">Endereço</string>
+    <string name="meusdadosemail">Email</string>
+    <string name="user_nome">Daniel Ribeiro</string>
+    <string name="user_cpf">450.920.032.735</string>
+    <string name="user_celular">(19) 95422-2841</string>
+    <string name="user_endereco">Avenida Tocantins,256</string>
+    <string name="user_email">d.ribeiro@gmail.com</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_encerrarconta">Encerrar Conta</string>
+
+
 </resources>

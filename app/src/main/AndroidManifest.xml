@@ -16,6 +16,12 @@
             android:name=".TelaLogin"
             android:exported="false" />
         <activity
+            android:name=".TelaMeusDados"
+            android:exported="false" />
+        <activity
+            android:name=".TelaMinhaConta"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
