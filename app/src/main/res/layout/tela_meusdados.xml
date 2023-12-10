@@ -14,12 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="17dp"
         android:text="@string/btn_encerrarconta"
         android:textColor="@color/darkblue"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomeprimeirocolocado" />
 
@@ -127,24 +125,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
         android:text="@string/meusdadosnome"
         android:textColor="@color/purple"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintTop_toBottomOf="@+id/percorridos2" />
 
     <TextView
         android:id="@+id/percorridos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="160dp"
         android:text="@string/btn_editar"
         android:textAlignment="center"
         android:textColor="@color/darkblue"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <TextView
@@ -164,95 +165,16 @@
         android:id="@+id/imageView8"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/nomeapp"
-        app:layout_constraintStart_toStartOf="@+id/nomeapp"
+        android:layout_marginEnd="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomeapp"
         app:srcCompat="@drawable/avatar" />
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/gray"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="578dp" />
-
-    <ImageView
-        android:id="@+id/buttonconsquistas"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/conquistas"
-        tools:layout_editor_absoluteX="337dp"
-        tools:layout_editor_absoluteY="591dp" />
-
-    <TextView
-        android:id="@+id/textconquistas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/conquistas"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="623dp" />
-
-    <TextView
-        android:id="@+id/texttroquesuasmoedas"
-        android:layout_width="102dp"
-        android:layout_height="37dp"
-        android:text="@string/troquesuasmoedas"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="623dp" />
-
-    <ImageView
-        android:id="@+id/buttontroquesuasmoedas"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/troqueseuspontos"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="591dp" />
-
-    <TextView
-        android:id="@+id/textcampanha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/campanhas"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="623dp" />
-
-    <ImageView
-        android:id="@+id/buttoncampanha"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/campanhas"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="591dp" />
-
-    <TextView
-        android:id="@+id/textcaminhada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Caminhada"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="623dp" />
-
-    <ImageView
-        android:id="@+id/buttoncaminhada"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/caminhada"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="591dp" />
-
     <Button
-        android:id="@+id/btnlogohome"
+        android:id="@+id/btn_logohome"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -262,6 +184,105 @@
         android:drawableTop="@drawable/logo_home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/buttonconsquistas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/textconquistas"
+        app:layout_constraintStart_toStartOf="@+id/textconquistas"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/conquistas" />
+
+    <TextView
+        android:id="@+id/textconquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/conquistas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonconsquistas" />
+
+    <TextView
+        android:id="@+id/texttroquesuasmoedas"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/troquesuasmoedas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toStartOf="@+id/textconquistas"
+        app:layout_constraintTop_toBottomOf="@+id/buttontroquesuasmoedas" />
+
+    <ImageView
+        android:id="@+id/buttontroquesuasmoedas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/texttroquesuasmoedas"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/texttroquesuasmoedas"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/troqueseuspontos" />
+
+    <TextView
+        android:id="@+id/textcampanha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/campanhas"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        app:layout_constraintStart_toEndOf="@+id/textcaminhada"
+        app:layout_constraintTop_toBottomOf="@+id/buttoncampanha" />
+
+    <ImageView
+        android:id="@+id/buttoncampanha"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/textcampanha"
+        app:layout_constraintStart_toStartOf="@+id/textcampanha"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/campanhas" />
+
+    <TextView
+        android:id="@+id/textcaminhada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/Caminhada"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoncaminhada" />
+
+    <ImageView
+        android:id="@+id/buttoncaminhada"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/textcaminhada"
+        app:layout_constraintStart_toStartOf="@+id/textcaminhada"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/caminhada" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"

@@ -21,9 +21,9 @@
     <string name="nometerceirocolocado">Milene Santos de Paula</string>
     <string name="username"></string>
     <string name="minhacontatitle">Minha Conta</string>
-    <string name="minhacontatext1">Text1</string>
-    <string name="minhacontatext2">Text2</string>
-    <string name="minhacontatext3">Text3</string>
+    <string name="minhacontatext1">Meus Dados</string>
+    <string name="minhacontatext2">Minhas Trocas</string>
+    <string name="minhacontatext3">Minhas Participações</string>
     <string name="minhacontatext4">Text4</string>
     <string name="minhacontatext5">Text5</string>
     <string name="minhacontatext6">Text6</string>
