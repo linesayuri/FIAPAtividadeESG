@@ -30,7 +30,6 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:text="@string/minhacontatext1"
-        app:icon="@drawable/icon_telemedicinaespecialidades"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
@@ -40,7 +39,6 @@
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
         android:text="@string/minhacontatext5"
-        app:icon="@drawable/icon_telemedicinaespecialidades"
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintStart_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -51,7 +49,6 @@
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
         android:text="@string/minhacontatext4"
-        app:icon="@drawable/icon_telemedicinaespecialidades"
         app:layout_constraintEnd_toEndOf="@+id/btn_minhasparticipacoes"
         app:layout_constraintStart_toStartOf="@+id/btn_minhasparticipacoes"
         app:layout_constraintTop_toBottomOf="@+id/btn_minhasparticipacoes" />
@@ -62,7 +59,6 @@
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
         android:text="@string/minhacontatext3"
-        app:icon="@drawable/icon_telemedicinaespecialidades"
         app:layout_constraintEnd_toEndOf="@+id/btn_minhastrocas"
         app:layout_constraintStart_toStartOf="@+id/btn_minhastrocas"
         app:layout_constraintTop_toBottomOf="@+id/btn_minhastrocas" />
@@ -74,7 +70,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:text="@string/minhacontatext2"
-        app:icon="@drawable/icon_telemedicinaespecialidades"
         app:layout_constraintEnd_toEndOf="@+id/btn_meusdados"
         app:layout_constraintStart_toStartOf="@+id/btn_meusdados"
         app:layout_constraintTop_toBottomOf="@+id/btn_meusdados" />
