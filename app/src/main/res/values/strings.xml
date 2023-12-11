@@ -19,7 +19,6 @@
     <string name="nomeprimeirocolocado">Marcos André Silveira</string>
     <string name="nomesegundocolocado">Fabiana Oliveira</string>
     <string name="nometerceirocolocado">Milene Santos de Paula</string>
-    <string name="username"></string>
     <string name="minhacontatitle">Minha Conta</string>
     <string name="minhacontatext1">Meus Dados</string>
     <string name="minhacontatext2">Minhas Trocas</string>
@@ -35,11 +34,13 @@
     <string name="meusdadosemail">Email</string>
     <string name="user_nome">Daniel Ribeiro</string>
     <string name="user_cpf">450.920.032.735</string>
-    <string name="user_celular">(19) 95422-2841</string>
+    <string name="user_celular">(19) 954222841</string>
     <string name="user_endereco">Avenida Tocantins,256</string>
     <string name="user_email">d.ribeiro@gmail.com</string>
     <string name="btn_editar">Editar</string>
     <string name="btn_encerrarconta">Encerrar Conta</string>
-
-
+    <string name="banner1">Campanha Doação de Sangue</string>
+    <string name="menu">Menu</string>
+    <string name="avatar">Avatar</string>
+    <string name="btnhome">Botão Home</string>
 </resources>
