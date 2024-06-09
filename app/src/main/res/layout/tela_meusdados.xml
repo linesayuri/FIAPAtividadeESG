@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".TelaInicio"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="86dp">
 
@@ -198,7 +198,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/buttonconsquistas"
+        android:id="@+id/btn_treinos"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="13dp"
@@ -218,7 +218,7 @@
         android:textAlignment="center"
         android:textColor="@color/purple"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonconsquistas" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_treinos" />
 
     <TextView
         android:id="@+id/texttroquesuasmoedas"
@@ -226,18 +226,18 @@
         android:layout_height="37dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="10dp"
-        android:text="@string/troquesuasmoedas"
+        android:text="@string/troqueseuspontos"
         android:textAlignment="center"
         android:textColor="@color/purple"
         app:layout_constraintEnd_toStartOf="@+id/textconquistas"
-        app:layout_constraintTop_toBottomOf="@+id/buttontroquesuasmoedas" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_pontos" />
 
     <ImageView
-        android:id="@+id/buttontroquesuasmoedas"
+        android:id="@+id/btn_pontos"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="13dp"
-        android:contentDescription="@string/troquesuasmoedas"
+        android:contentDescription="@string/troqueseuspontos"
         app:layout_constraintEnd_toEndOf="@+id/texttroquesuasmoedas"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/texttroquesuasmoedas"
@@ -254,10 +254,10 @@
         android:textAlignment="center"
         android:textColor="@color/purple"
         app:layout_constraintStart_toEndOf="@+id/textcaminhada"
-        app:layout_constraintTop_toBottomOf="@+id/buttoncampanha" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_campanhas" />
 
     <ImageView
-        android:id="@+id/buttoncampanha"
+        android:id="@+id/btn_campanhas"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="13dp"
@@ -277,10 +277,10 @@
         android:textAlignment="center"
         android:textColor="@color/purple"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoncaminhada" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_inicio" />
 
     <ImageView
-        android:id="@+id/buttoncaminhada"
+        android:id="@+id/btn_inicio"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="13dp"

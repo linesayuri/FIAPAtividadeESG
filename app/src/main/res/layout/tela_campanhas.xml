@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicio">
+
+    <!--    Header-->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/campanhas"
+        android:textColor="@color/darkblue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_perfil"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/perfil"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <!--    Fim Header-->
+
+
+    <!--    Inicio Menu Bottom-->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="BottomAppBar,VisualLintBottomAppBar" />
+
+    <ImageButton
+        android:id="@+id/btn_treinos"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/treinos"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_inicio"
+        app:layout_constraintEnd_toEndOf="@+id/textconquistas"
+        app:layout_constraintStart_toStartOf="@+id/textconquistas"
+        app:srcCompat="@drawable/ico_treino"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textconquistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="@string/treinos"
+        android:textAlignment="center"
+        android:textColor="@color/purple_texts"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textcaminhada"
+        app:layout_constraintTop_toTopOf="@+id/textcaminhada"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_campanhas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/campanhas"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_treinos"
+        app:layout_constraintEnd_toEndOf="@+id/textcampanha"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/textcampanha"
+        app:srcCompat="@drawable/campanhas"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textcampanha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/campanhas"
+        android:textAlignment="center"
+        android:textColor="@color/purple_texts"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/texttroquesuasmoedas"
+        app:layout_constraintStart_toEndOf="@+id/textconquistas"
+        app:layout_constraintTop_toTopOf="@+id/textconquistas" />
+
+    <ImageButton
+        android:id="@+id/btn_consultas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/consultas"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_pontos"
+        app:layout_constraintEnd_toEndOf="@+id/textconquistas2"
+        app:layout_constraintStart_toStartOf="@+id/textconquistas2"
+        app:srcCompat="@drawable/ico_consultas"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_inicio"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/Caminhada"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@+id/textcaminhada"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textcaminhada"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/ico_home"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textconquistas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/consultas"
+        android:textAlignment="center"
+        android:textColor="@color/purple_texts"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/texttroquesuasmoedas"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_pontos"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/troqueseuspontos"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_campanhas"
+        app:layout_constraintEnd_toEndOf="@+id/texttroquesuasmoedas"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/texttroquesuasmoedas"
+        app:srcCompat="@drawable/troqueseuspontos"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/texttroquesuasmoedas"
+        android:layout_width="49dp"
+        android:layout_height="13dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/troqueseuspontos"
+        android:textAlignment="center"
+        android:textColor="@color/purple_texts"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textconquistas2"
+        app:layout_constraintTop_toTopOf="@+id/textcampanha"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textcaminhada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/inicio"
+        android:textAlignment="center"
+        android:textColor="@color/purple_texts"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppBar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inicio" />
+
+
+    <!--fim Menu bottom-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

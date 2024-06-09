@@ -3,10 +3,20 @@
     <string name="button_login">Entrar</string>
     <string name="login_email">Email</string>
     <string name="login_password">Senha</string>
+    <string name="inicio">Início</string>
     <string name="Caminhada">Caminhada</string>
     <string name="campanhas">Campanhas</string>
-    <string name="troquesuasmoedas">Troque suas Moedas</string>
+    <string name="troqueseuspontos">Pontos</string>
+    <string name="perfil">Perfil</string>
     <string name="conquistas">Conquistas</string>
+    <string name="treinos">Treinos</string>
+    <string name="consultas">Consultas</string>
+    <string name="parceiros">Parceiros</string>
+    <string name="parceiro_1">Dux Nutrition</string>
+    <string name="parceiro_2">Liv Up</string>
+    <string name="parceiro_3">Nike</string>
+    <string name="parceiro_4">Decathlon</string>
+    <string name="vertodos">Ver Todos</string>
     <string name="valorkmpercorridos">78</string>
     <string name="km">km</string>
     <string name="percorridos">Percorridos</string>
@@ -25,14 +35,14 @@
     <string name="minhacontatext3">Minhas Participações</string>
     <string name="minhacontatext4">Suporte</string>
     <string name="minhacontatext5">Configurações</string>
-    <string name="minhacontatext6">Text6</string>
+    <string name="minhacontatext6">Minhas Conquistas</string>
     <string name="meusdadostitle">Meus Dados</string>
     <string name="meusdadosnome">Nome</string>
     <string name="meusdadoscpf">CPF</string>
     <string name="meusdadoscelular">Celular</string>
     <string name="meusdadosendereco">Endereço</string>
     <string name="meusdadosemail">Email</string>
-    <string name="user_nome">Daniel Ribeiro</string>
+    <string name="user_nome">Felipe Silva</string>
     <string name="user_cpf">450.920.032.735</string>
     <string name="user_celular">(19) 954222841</string>
     <string name="user_endereco">Avenida Tocantins,256</string>
@@ -43,4 +53,16 @@
     <string name="menu">Menu</string>
     <string name="avatar">Avatar</string>
     <string name="btnhome">Botão Home</string>
+    <string name="hint_search">O que está procurando hoje?</string>
+    <string name="edit_photo">Editar Foto</string>
+    <string name="user_name">"@fe_silva"</string>
+    <string name="user_tipodeplano">Plano Premium Enterprise</string>
+    <string name="consulta_1">Nutricionista</string>
+    <string name="consulta_2">Personal Trainer</string>
+    <string name="consulta_3">Psicólogo</string>
+    <string name="consulta_4">Outras Especialidades</string>
+    <string name="txt_treino_1">Calendário</string>
+    <string name="txt_treino_2">Treino de Hoje</string>
+    <string name="txt_treino_3">Criar Desafio</string>
+
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".TelaInicio"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="86dp">
 
@@ -83,7 +83,7 @@
         android:id="@+id/nomeapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="152dp"
         android:text="@string/minhacontatitle"
         android:textColor="@color/purple"
@@ -118,114 +118,6 @@
         app:iconPadding="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/buttonconsquistas"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="13dp"
-        android:contentDescription="@string/conquistas"
-        app:layout_constraintEnd_toEndOf="@+id/textconquistas"
-        app:layout_constraintStart_toStartOf="@+id/textconquistas"
-        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
-        app:srcCompat="@drawable/conquistas" />
-
-    <TextView
-        android:id="@+id/textconquistas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/conquistas"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonconsquistas" />
-
-    <TextView
-        android:id="@+id/texttroquesuasmoedas"
-        android:layout_width="102dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/troquesuasmoedas"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        app:layout_constraintEnd_toStartOf="@+id/textconquistas"
-        app:layout_constraintTop_toBottomOf="@+id/buttontroquesuasmoedas" />
-
-    <ImageView
-        android:id="@+id/buttontroquesuasmoedas"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="13dp"
-        android:contentDescription="@string/troquesuasmoedas"
-        app:layout_constraintEnd_toEndOf="@+id/texttroquesuasmoedas"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="@+id/texttroquesuasmoedas"
-        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
-        app:srcCompat="@drawable/troqueseuspontos" />
-
-    <TextView
-        android:id="@+id/textcampanha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="2dp"
-        android:text="@string/campanhas"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        app:layout_constraintStart_toEndOf="@+id/textcaminhada"
-        app:layout_constraintTop_toBottomOf="@+id/buttoncampanha" />
-
-    <ImageView
-        android:id="@+id/buttoncampanha"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="13dp"
-        android:contentDescription="@string/campanhas"
-        app:layout_constraintEnd_toEndOf="@+id/textcampanha"
-        app:layout_constraintStart_toStartOf="@+id/textcampanha"
-        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
-        app:srcCompat="@drawable/campanhas" />
-
-    <TextView
-        android:id="@+id/textcaminhada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="2dp"
-        android:text="@string/Caminhada"
-        android:textAlignment="center"
-        android:textColor="@color/purple"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoncaminhada" />
-
-    <ImageView
-        android:id="@+id/buttoncaminhada"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="13dp"
-        android:contentDescription="@string/Caminhada"
-        app:layout_constraintEnd_toEndOf="@+id/textcaminhada"
-        app:layout_constraintStart_toStartOf="@+id/textcaminhada"
-        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
-        app:srcCompat="@drawable/caminhada" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

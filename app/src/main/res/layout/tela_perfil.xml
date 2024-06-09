@@ -4,58 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaInicio">
+    android:background="@color/white"
+    tools:context=".TelaInicio"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="86dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_nome"
+        android:textColor="@color/darkblue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bntn_edit_foto"
+        app:layout_constraintStart_toStartOf="@+id/bntn_edit_foto"
+        app:layout_constraintTop_toBottomOf="@+id/bntn_edit_foto" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="155dp"
+        android:contentDescription="@string/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/bntn_edit_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/edit_photo"
+        android:textColor="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/user_name"
+        android:textColor="@color/darkgray"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 
     <TextView
-        android:id="@+id/nomeapp"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/user_tipodeplano"
+        android:textColor="@color/darkgray"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
         android:layout_marginTop="30dp"
-        android:text="@string/inicio"
-        android:textColor="@color/darkblue"
+        android:layout_marginEnd="118dp"
+        android:text="@string/minhacontatext6"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="330dp"
-        android:layout_height="153dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="41dp"
-        android:contentDescription="@string/banner1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/moedas"
-        app:srcCompat="@drawable/banner1" />
+        app:layout_constraintTop_toBottomOf="@+id/percorridos2" />
 
     <TextView
         android:id="@+id/km"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="4dp"
         android:text="@string/km"
         android:textColor="@color/darkblue"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/percorridos2"
+        app:layout_constraintBottom_toBottomOf="@+id/valorkm"
         app:layout_constraintStart_toEndOf="@+id/valorkm" />
 
     <TextView
         android:id="@+id/valorkm"
         android:layout_width="43dp"
         android:layout_height="39dp"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
         android:text="@string/valorkmpercorridos"
         android:textColor="@color/darkblue"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -70,109 +123,71 @@
         app:layout_constraintTop_toBottomOf="@+id/valorkm" />
 
     <TextView
-        android:id="@+id/nomeprimeirocolocado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="@string/nomeprimeirocolocado"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/nomesegundocolocado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="@string/nomesegundocolocado"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/nometerceirocolocado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="@string/nometerceirocolocado"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintStart_toEndOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/ranking"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="179dp"
-        android:text="@string/ranking"
-        android:textColor="@color/darkblue"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-    <TextView
         android:id="@+id/valormoedas"
         android:layout_width="83dp"
         android:layout_height="39dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="86dp"
+        android:layout_marginEnd="80dp"
         android:text="@string/valormoedas"
         android:textAlignment="center"
         android:textColor="@color/purple"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/valorkm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@+id/valorkm"
         tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/moedas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:text="@string/moedas"
-        android:textColor="#7C4DFF"
+        android:textColor="@color/purple"
         app:layout_constraintBottom_toBottomOf="@+id/percorridos2"
         app:layout_constraintEnd_toEndOf="@+id/valormoedas"
-        app:layout_constraintStart_toStartOf="@+id/valormoedas"
-        app:layout_constraintTop_toBottomOf="@+id/valormoedas" />
+        app:layout_constraintStart_toStartOf="@+id/valormoedas" />
 
-    <TextView
-        android:id="@+id/textView2"
+
+    <!--    Inicio Menu Bottom-->
+
+
+    <ImageView
+        android:id="@+id/conquista_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/segundolugar"
-        android:textColor="@color/purple"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/conquista_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/conquista_3"
+        app:srcCompat="@drawable/conq_4" />
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/conquista_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="114dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/primeirolugar"
-        android:textColor="@color/purple"
-        android:textStyle="bold"
+        android:layout_marginStart="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/conquista_1"
+        app:layout_constraintStart_toEndOf="@+id/conquista_1"
+        app:srcCompat="@drawable/conq_2" />
+
+    <ImageView
+        android:id="@+id/conquista_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/conquista_2"
+        app:layout_constraintStart_toEndOf="@+id/conquista_2"
+        app:srcCompat="@drawable/conq_3" />
+
+    <ImageView
+        android:id="@+id/conquista_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/terceirolugar"
-        android:textColor="@color/purple"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-<!--    Inicio Menu Bottom-->
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/conq_1" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -326,39 +341,6 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_inicio" />
 
     <!--fim Menu bottom-->
-
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="km,valorkm" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="320sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="45dp"
-        android:autofillHints="@string/hint_search"
-        android:background="@drawable/border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_perfil" />
-
-    <ImageButton
-        android:id="@+id/btn_perfil"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="25dp"
-        android:background="@color/transparent"
-        android:contentDescription="@string/perfil"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/avatar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

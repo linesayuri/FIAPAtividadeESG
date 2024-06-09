@@ -11,11 +11,5 @@ class TelaMeusDados : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tela_meusdados)
 
-        val btnLogoHome: Button = findViewById<Button>(R.id.btn_logohome)
-
-        btnLogoHome.setOnClickListener {
-            val i = Intent(this, MainActivity::class.java)
-            startActivity(i)
-        }
     }
 }

@@ -8,13 +8,15 @@ import android.widget.Button
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tela_login)
 
-        val btnMinhaConta: Button = findViewById<Button>(R.id.btnminhaconta)
+        val btnLogin: Button = findViewById(R.id.buttonlogin)
 
-        btnMinhaConta.setOnClickListener {
-            val i = Intent(this, TelaMinhaConta::class.java)
+        btnLogin.setOnClickListener {
+        val i = Intent(this, TelaInicio::class.java)
             startActivity(i)
         }
+
     }
 }
+
