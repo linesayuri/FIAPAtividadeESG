@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TelaInicio">
 
     <!--    Header-->
@@ -144,32 +145,6 @@
 
 
     <!--    /* banners-->
-
-    <ImageView
-        android:id="@+id/banner_pontos_1"
-        android:layout_width="340dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_parc4"
-        tools:srcCompat="@tools:sample/backgrounds/scenic"
-        android:importantForAccessibility="no" />
-
-    <ImageView
-        android:id="@+id/banner_pontos_2"
-        android:layout_width="340dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/banner_pontos_1"
-        tools:srcCompat="@tools:sample/backgrounds/scenic"
-        tools:ignore="ContentDescription" />
 
     <!--    /* fim banners-->
 
@@ -326,6 +301,28 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/bottomAppBar"
         app:layout_constraintTop_toBottomOf="@+id/btn_inicio" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="340sp"
+        android:layout_height="240sp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_parc4"
+        app:srcCompat="@drawable/banner_asics" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="340sp"
+        android:layout_height="240sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/banner_dux" />
 
     <!--fim Menu bottom-->
 

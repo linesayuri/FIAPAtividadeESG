@@ -4,9 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TelaInicio">
 
     <!--    Header-->
+
+    <ImageView
+        android:id="@+id/banner_campanha_2"
+        android:layout_width="340sp"
+        android:layout_height="240sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/banner_campanha_1"
+        app:layout_constraintStart_toStartOf="@+id/banner_campanha_1"
+        app:layout_constraintTop_toBottomOf="@+id/banner_campanha_1"
+        app:srcCompat="@drawable/banner_reciclagem" />
+
+    <ImageView
+        android:id="@+id/banner_campanha_3"
+        android:layout_width="340sp"
+        android:layout_height="240sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/banner_campanha_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/banner_campanha_1"
+        app:layout_constraintTop_toBottomOf="@+id/banner_campanha_2"
+        app:srcCompat="@drawable/banner_plantio" />
 
     <TextView
         android:id="@+id/textView5"
@@ -189,6 +211,18 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/bottomAppBar"
         app:layout_constraintTop_toBottomOf="@+id/btn_inicio" />
+
+    <ImageView
+        android:id="@+id/banner_campanha_1"
+        android:layout_width="340sp"
+        android:layout_height="240sp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_perfil"
+        app:srcCompat="@drawable/banner_doacao" />
 
 
     <!--fim Menu bottom-->
